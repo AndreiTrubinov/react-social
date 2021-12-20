@@ -1,0 +1,83 @@
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+
+/* #117ae3
+#0d61b5 */
+
+.app-wrapper{
+  display: grid;
+  grid-template-areas:
+          "header header"
+          "navbar content";
+  grid-template-columns: 300px 1fr;
+}
+.header{
+  grid-area: header;
+  margin-bottom: 50px;
+}
+.navbar{
+  grid-area: navbar;
+}
+.app-wrapper-content{
+  grid-area: content;
+  padding-right: 150px;
+  padding-left: 50px;
+}
+.App-logo {
+  height: 6vmin;
+  pointer-events: none;
+  margin-top: 5px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.header {
+  background-color: #282c34;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(2px + 2vmin);
+  color: white;
+}
+
+.nav-list{
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.nav-list_item{
+  margin-bottom: 10px;
+}
+.App-link {
+  color: #61dafb;
+  margin: 15px auto;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.user-bg{
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

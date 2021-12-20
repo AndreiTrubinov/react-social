@@ -1,0 +1,21 @@
+.dialogs {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    gap: 10px 30px;
+    font-size: 18px;
+}
+.dialog {
+    margin-bottom: 20px;
+    a {
+        color: #61dafb;
+        font-weight: 500;
+    }
+    a.active {
+        color: #0d61b5;
+    }
+}
+.message{
+    margin-bottom: 5px;
+    color: #ccc;
+}
